@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:14.2
+    restart: on-failure
+    volumes:
+      - ./conf/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./pgdata:/var/lib/postgresql/data
+    env_file:
+      - .env
+    logging:
+      driver: "none"
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ./backend.dockerfile
+    restart: on-failure
+    volumes:
+      - ./backend/backend:/backend/
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env

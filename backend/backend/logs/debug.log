@@ -1,0 +1,45 @@
+ 2022-09-25 05:10:45,311  WARNING - django.request - Not Found: /media/wallpaper005.jpg
+ 2022-09-25 05:10:45,311  INFO - gunicorn.access - GET: /media/wallpaper005.jpg - 404
+ 2022-09-25 05:10:45,361  WARNING - django.request - Not Found: /favicon.ico
+ 2022-09-25 05:10:45,362  INFO - gunicorn.access - GET: /favicon.ico - 404
+ 2022-09-25 05:10:45,929  WARNING - django.request - Not Found: /media/wallpaper005.jpg
+ 2022-09-25 05:10:45,930  INFO - gunicorn.access - GET: /media/wallpaper005.jpg - 404
+ 2022-09-25 05:11:03,267  INFO - gunicorn.access - GET: /admin/ - 200
+ 2022-09-25 05:11:03,304  INFO - gunicorn.access - GET: /static/admin/css/base.css - 200
+ 2022-09-25 05:11:03,305  INFO - gunicorn.access - GET: /static/admin/css/dark_mode.css - 200
+ 2022-09-25 05:11:03,306  INFO - gunicorn.access - GET: /static/admin/css/dashboard.css - 200
+ 2022-09-25 05:11:03,312  INFO - gunicorn.access - GET: /static/admin/css/nav_sidebar.css - 200
+ 2022-09-25 05:11:03,313  INFO - gunicorn.access - GET: /static/admin/js/nav_sidebar.js - 200
+ 2022-09-25 05:11:03,315  INFO - gunicorn.access - GET: /static/admin/css/responsive.css - 200
+ 2022-09-25 05:11:03,331  INFO - gunicorn.access - GET: /static/admin/css/fonts.css - 200
+ 2022-09-25 05:11:03,351  INFO - gunicorn.access - GET: /static/admin/img/icon-addlink.svg - 200
+ 2022-09-25 05:11:03,352  INFO - gunicorn.access - GET: /static/admin/img/icon-changelink.svg - 200
+ 2022-09-25 05:11:03,353  INFO - gunicorn.access - GET: /static/admin/img/icon-deletelink.svg - 200
+ 2022-09-25 05:11:03,376  INFO - gunicorn.access - GET: /static/admin/fonts/Roboto-Light-webfont.woff - 200
+ 2022-09-25 05:11:03,377  INFO - gunicorn.access - GET: /static/admin/fonts/Roboto-Bold-webfont.woff - 200
+ 2022-09-25 05:11:03,377  INFO - gunicorn.access - GET: /static/admin/fonts/Roboto-Regular-webfont.woff - 200
+ 2022-09-25 05:11:05,119  INFO - gunicorn.access - GET: /admin/auth/user/ - 200
+ 2022-09-25 05:11:05,137  INFO - gunicorn.access - GET: /static/admin/css/dark_mode.css - 304
+ 2022-09-25 05:11:05,137  INFO - gunicorn.access - GET: /static/admin/css/nav_sidebar.css - 304
+ 2022-09-25 05:11:05,138  INFO - gunicorn.access - GET: /static/admin/js/vendor/jquery/jquery.js - 200
+ 2022-09-25 05:11:05,140  INFO - gunicorn.access - GET: /static/admin/js/vendor/xregexp/xregexp.js - 200
+ 2022-09-25 05:11:05,138  INFO - gunicorn.access - GET: /static/admin/css/base.css - 304
+ 2022-09-25 05:11:05,149  INFO - gunicorn.access - GET: /static/admin/css/responsive.css - 304
+ 2022-09-25 05:11:05,150  INFO - gunicorn.access - GET: /static/admin/css/changelists.css - 200
+ 2022-09-25 05:11:05,151  INFO - gunicorn.access - GET: /static/admin/js/admin/RelatedObjectLookups.js - 200
+ 2022-09-25 05:11:05,151  INFO - gunicorn.access - GET: /static/admin/js/jquery.init.js - 200
+ 2022-09-25 05:11:05,152  INFO - gunicorn.access - GET: /static/admin/js/core.js - 200
+ 2022-09-25 05:11:05,159  INFO - gunicorn.access - GET: /admin/jsi18n/ - 200
+ 2022-09-25 05:11:05,159  INFO - gunicorn.access - GET: /static/admin/js/actions.js - 200
+ 2022-09-25 05:11:05,161  INFO - gunicorn.access - GET: /static/admin/js/urlify.js - 200
+ 2022-09-25 05:11:05,161  INFO - gunicorn.access - GET: /static/admin/js/prepopulate.js - 200
+ 2022-09-25 05:11:05,178  INFO - gunicorn.access - GET: /static/admin/css/fonts.css - 304
+ 2022-09-25 05:11:05,205  INFO - gunicorn.access - GET: /static/admin/js/nav_sidebar.js - 304
+ 2022-09-25 05:11:05,205  INFO - gunicorn.access - GET: /static/admin/js/filters.js - 200
+ 2022-09-25 05:11:05,221  INFO - gunicorn.access - GET: /static/admin/img/search.svg - 200
+ 2022-09-25 05:11:05,221  INFO - gunicorn.access - GET: /static/admin/img/icon-yes.svg - 200
+ 2022-09-25 05:11:05,233  INFO - gunicorn.access - GET: /static/admin/fonts/Roboto-Bold-webfont.woff - 304
+ 2022-09-25 05:11:05,233  INFO - gunicorn.access - GET: /static/admin/fonts/Roboto-Light-webfont.woff - 304
+ 2022-09-25 05:11:05,233  INFO - gunicorn.access - GET: /static/admin/fonts/Roboto-Regular-webfont.woff - 304
+ 2022-09-25 05:11:05,234  INFO - gunicorn.access - GET: /static/admin/img/tooltag-add.svg - 200
+ 2022-09-25 05:11:05,246  INFO - gunicorn.access - GET: /static/admin/img/sorting-icons.svg - 200

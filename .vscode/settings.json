@@ -1,0 +1,22 @@
+{
+  // - - - Настроить  цвета statusBar внизу - - - - - - - - - - 
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#333333",
+  },
+  // - - - Настройки pythonPath - - - - - - - - - - 
+  "python.defaultInterpreterPath": "./venv/bin/python",
+  // - - - Настройки autopep8 - - - - - - - - - - 
+  "python.formatting.provider": "autopep8",
+  "python.formatting.autopep8Args": [
+    "--max-line-length",
+    "100",
+    "--experimental"
+  ],
+  "editor.snippetSuggestions": "top",
+
+  // - - - Настройки cSpell - - - - - - - - - - - - -
+  "cSpell.language": "en,ru",
+  "cSpell.words": [
+   
+  ],
+}
