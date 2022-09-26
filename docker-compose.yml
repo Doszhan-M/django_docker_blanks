@@ -11,6 +11,12 @@ services:
       - .env
     logging:
       driver: "none"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 60s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
 
   backend:
     build:
@@ -23,3 +29,5 @@ services:
       - "8000:8000"
     env_file:
       - .env
+    depends_on:
+      - postgres
