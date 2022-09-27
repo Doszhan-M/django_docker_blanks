@@ -5,7 +5,10 @@ from datetime import timedelta
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-DEBUG = os.getenv("DEBUG")
+if os.getenv("DEBUG") == 'TRUE':
+    DEBUG = True
+else:
+    DEBUG = False
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 
@@ -106,7 +109,12 @@ DJOSER = {
          'current_user': 'accounts.serializers.UserMeSerializer',
     }
 }
-    
+
+# CELERY SETTINGS
+CELERY_BROKER_URL = os.getenv("CELERY_BROKER_URL")
+CELERY_RESULT_BACKEND = os.getenv("CELERY_RESULT_BACKEND")
+CELERY_ENABLE_UTC = True
+
 
 LANGUAGE_CODE = 'en-us'
 
@@ -225,7 +233,7 @@ LOGGING = {
             "level": "INFO",
             "propagate": True,
         },
-        # 'django.db.backends': { # закомментировать для выключения вывода sql запросов
+        # 'django.db.backends': { # sql запросы
         #     'level': 'DEBUG',
         #     'handlers': ["sql_console"],
         #     "propagate": False,

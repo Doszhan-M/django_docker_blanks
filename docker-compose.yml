@@ -31,3 +31,56 @@ services:
       - .env
     depends_on:
       - postgres
+
+  celery_backend:
+    build:
+      context: ./backend
+      dockerfile: ./celery.dockerfile
+    restart: on-failure
+    volumes:
+      - ./backend/backend:/backend/
+    env_file:
+      - .env
+    depends_on:
+      - backend
+      - redis
+
+  beat_backend:
+    build:
+      context: ./backend
+      dockerfile: ./beat.dockerfile
+    restart: on-failure
+    volumes:
+      - ./backend/backend:/backend/
+    env_file:
+      - .env
+    depends_on:
+      - backend
+      - redis
+
+  redis:
+    image: redis:7.0.0
+    restart: on-failure
+    healthcheck:
+      test: ["CMD", "redis-cli","ping"]
+      interval: 60s
+      timeout: 5s
+      retries: 5
+      start_period: 3s
+
+  flower_backend:
+    image: mher/flower
+    command: ["celery", "flower", "--url-prefix=flower_backend"]
+    restart: always
+    environment:
+      - DEBUG=1
+      - CELERY_BROKER=${CELERY_BROKER_URL}
+      - CELERY_BACKEND=${CELERY_RESULT_BACKEND}
+      - CELERY_ENABLE_UTC=True
+      - FLOWER_BASIC_AUTH=root:fQbxHqbR
+    logging:
+      driver: "none"
+    ports:
+      - 5555:5555
+    depends_on:
+      - celery_backend
