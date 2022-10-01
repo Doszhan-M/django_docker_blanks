@@ -2,6 +2,7 @@
 
 ```
 Blank project with custom user model
-use: djoser and djangorestframework-simplejwt for jwt authenticating
-Add celery and beat workers and signals 
+Auth by jwt tokens:djoser and djangorestframework-simplejwt and django session based auth
+Add celery and beat workers 
+Work signals 
 ```

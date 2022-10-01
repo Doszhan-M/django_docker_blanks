@@ -43,6 +43,7 @@
     "dereg",
     "deregdate",
     "digestmod",
+    "djangorestframework",
     "djoser",
     "doseq",
     "Doszhan",
