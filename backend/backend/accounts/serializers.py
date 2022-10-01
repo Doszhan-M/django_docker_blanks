@@ -4,7 +4,7 @@ from djoser.serializers import UserCreateSerializer, UserSerializer
 
 class RegistrationSerializer(UserCreateSerializer):
     class Meta(UserCreateSerializer.Meta):
-        fields = ('username', 'email', 'phone', 'password', )
+        fields = ('email', 'phone', 'password', )
 
     def to_representation(self, instance):
         data = super(RegistrationSerializer, self).to_representation(instance)
@@ -16,4 +16,4 @@ class RegistrationSerializer(UserCreateSerializer):
 
 class UserMeSerializer(UserSerializer):
     class Meta(UserSerializer.Meta):
-        fields = ('username', 'email', 'phone', )
+        fields = ('email', 'phone', )

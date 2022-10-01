@@ -24,7 +24,6 @@ admin.site.register(models.OutstandingToken, NewOutstandingTokenAdmin)
 try:
     DjangoUser = get_user_model()
     DjangoUser.objects.create_superuser(
-        username=getenv('ADMIN_USERNAME'),
         email=getenv('ADMIN_EMAIL'),
         password=getenv('ADMIN_PASS'))
 except (IntegrityError, ProgrammingError):

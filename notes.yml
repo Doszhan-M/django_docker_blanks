@@ -2,27 +2,3 @@ docker exec -it videohosting_backend_1 bash
 
 python3 manage.py makemigrations
 python3 manage.py migrate
-
-python3 manage.py makemigrations --noinput
-python3 manage.py collectstatic --noinput
-
-
-python3 manage.py createcachetable
-python3 manage.py createsuperuser
-
-
-http://127.0.0.1:9090/auth/realms/SFRealm/account
-http://127.0.0.1:9090/auth/realms/SFRealm/protocol/openid-connect/auth
-
-http://127.0.0.1:9090/auth/realms/SFRealm/protocol/openid-connect/certs
-
-sf_client
-
-{
-  "realm": "SFRealm",
-  "auth-server-url": "http://127.0.0.1:9090/auth/",
-  "ssl-required": "external",
-  "resource": "sf_client",
-  "public-client": true,
-  "confidential-port": 0
-}

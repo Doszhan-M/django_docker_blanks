@@ -17,6 +17,6 @@ app.autodiscover_tasks()
 app.conf.beat_schedule = {  
     'test': {
         'task': 'accounts.tasks.test',
-        'schedule': 300,
+        'schedule': 3000,
     },
 }
